@@ -43,10 +43,9 @@ All of our previous methods of filtering and sorting still work here too, of cou
 
 ```{r}
 
-srqflights %>% 
-  filter(origin == "LGA",
-         month == 1,
-         sched_dep_time < 1200)
+
+ 
+filter(srqflights, origin == "LGA", month == 1, sched_dep_time < 1200)
 
 
 ```
